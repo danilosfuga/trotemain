@@ -65,6 +65,32 @@ body {
     margin: -40px auto 40px;
     padding: 20px;
 }
-.missao-valores {
-    
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.importante{
+    display: flex;
+    gap: 20px;
+}
+.card-meta {
+    flex: 1;
+    background-color: #eef5ff;
+    padding: 15px;
+    border-left: 5px solid #2a5298;
+    border-radius: 8px;
+}
+.recompensas ul {
+    list-style: none;
+    padding: 0;
+}
+.recompensas li {
+    background-color: #e9f7ef;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #27ae60;
 }
