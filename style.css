@@ -94,3 +94,19 @@ section {
     border-radius: 5px;
     color: #27ae60;
 }
+.texto-introducao p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.lista-valores {
+    list-style: none;
+    padding: 0;
+}
+.lista-valores li {
+    background-color: #eef5ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #4042ca;
+}
