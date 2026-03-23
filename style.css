@@ -93,6 +93,7 @@ section {
     padding: 10px;
     border-radius: 5px;
     color: #27ae60;
+    font-weight: bold;
 }
 .texto-introducao p {
     line-height: 1.6;
@@ -119,15 +120,65 @@ table {
 th, td {
     padding: 15px;
     text-align: left;
-    border : 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 th {
-    background-color: darkblue;
-    
+    background-color: #2a5298;
+    color: white;
+}
+tr:hover {
+    background-color: #f1f1f1;
 }
 .box-amarela {
-    background-color: yellow;
-    width: 20px; 
-    height: 20px;
+    background: yellow;
+    width: 25px; 
+    height: 25px;
     border-radius: 4px;
+}
+.kit-alimentacao ul {
+    list-style: none;
+    background-color: #f5f1df;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #b9a705;
+}
+.kit-alimentacao ul li {
+    margin: 10px 0;
+    color: #6d6202;
+    font-size: 1rem;
+}
+.suplementos {
+    background-color: rgb(255, 250, 250);
+    border-left: rgba(199, 3, 3, 0.719) solid 5px;
+}
+.lista-amarela ul{
+    list-style: none;
+    color: #6d6202;
+    padding: 0;
+}
+.lista-amarela ul li {
+    margin: 10px 0;
+}
+.container-amarelo {
+    background-color: #fdf5dd;
+    padding: 20px;
+    border-left: rgb(224, 224, 8) solid 5px;
+}
+.container-amarelo div ul{
+    list-style: none;
+    color: #6d6202;
+    padding: 0;
+}
+.container-amarelo div ul li {
+    margin: 10px 0;
+}
+footer{
+    background-color: #2e4c82;
+    color: white;
+    padding:  30px 20px;
+    text-align: center;
+    border-top: 3px solid #f0e004;
 }
