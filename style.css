@@ -135,50 +135,112 @@ tr:hover {
     height: 25px;
     border-radius: 4px;
 }
-.kit-alimentacao ul {
-    list-style: none;
-    background-color: #f5f1df;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 8px;
-    border-style: dashed;
-    border-width: 1px;
-    border-color: #b9a705;
+.box-cinza {
+    background: #ccc;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
 }
-.kit-alimentacao ul li {
+.box-laranja {
+    background: orange;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.box-marrom {
+    background: #8B4513;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.box-preta {
+    background: black;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.box-rosa {
+    background: pink;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.box-roxa {
+    background: purple;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.box-verde {
+    background: green;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.box-vermelho {
+    background: red;
+    width: 25px; 
+    height: 25px;
+    border-radius: 4px;
+}
+.lista-itens {
+    list-style: none;
+    padding: 0;
+}
+.lista-itens li {
     margin: 10px 0;
-    color: #6d6202;
-    font-size: 1rem;
+    color: #856404;
+    font-size: 1.1rem;
 }
 .suplementos {
     background-color: rgb(255, 250, 250);
     border-left: rgba(199, 3, 3, 0.719) solid 5px;
-}
-.lista-amarela ul{
-    list-style: none;
-    color: #6d6202;
-    padding: 0;
-}
-.lista-amarela ul li {
-    margin: 10px 0;
 }
 .container-amarelo {
     background-color: #fdf5dd;
     padding: 20px;
     border-left: rgb(224, 224, 8) solid 5px;
 }
-.container-amarelo div ul{
-    list-style: none;
-    color: #6d6202;
-    padding: 0;
-}
-.container-amarelo div ul li {
-    margin: 10px 0;
-}
 footer{
-    background-color: #2e4c82;
+    background-color: #1e3c72;
     color: white;
     padding:  30px 20px;
     text-align: center;
-    border-top: 3px solid #f0e004;
+    border-top: 4px solid #ffd700;
+    font-size: 0.85rem;
+    margin-top: 50px;
+}
+footer p {
+    margin: 8px 0;
+    opacity: 0.9;
+}
+.evento{
+    margin-bottom: 25px;
+    position: relative; 
+}
+.evento::before{
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 58%;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+}
+.timeline{
+    border-left: solid #1e3c72 3px;
+    padding-left: 13px;
+    margin-top: 20px;
+}
+.grid-locais {
+    display: flex;
+    gap: 20px;
+}
+.unidade{
+    flex: 1;
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
