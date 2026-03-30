@@ -222,15 +222,15 @@ footer p {
   content: '';
   width: 12px;
   height: 12px;
-  background-color: red;
-  border-radius: 58%;
+  background: #ff4b2b;
+  border-radius: 50%;
   position: absolute;
-  left: -20px;
+  left: -28px;
   top: 5px;
 }
 .timeline{
-    border-left: solid #1e3c72 3px;
-    padding-left: 13px;
+    border-left: solid #2a5298 3px;
+    padding-left: 20px;
     margin-top: 20px;
 }
 .grid-locais {
@@ -239,8 +239,36 @@ footer p {
 }
 .unidade{
     flex: 1;
-    background: whitesmoke;
+    background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
+    width: 100px;
+}
+.resultado-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #1e3c72;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
