@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trote solidário</title>
+        <title>Calculadora</title>
         <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <nav class="menu">
@@ -23,18 +24,49 @@
             </div>
         </nav>
         <main class="principal">
-            <section class="calculadora">
-                <h3>Simulador de Pontos</h3>
+            <section>
+                <h3>Simulador de Metas batidas</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Kit Alimentação (60 Kits)</label>
+                        <input type="number" id="kitAlimentacao" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Suplemento (30 Unidades)</label>
+                        <input type="number" id="qtdeLatas" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Leite (60 caixas)</label>
+                        <input type="number" id="qtdeLeites" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Doação de Sangue (30 Doações)</label>
+                        <input type="number" id="qtdeDoacoes" min="0">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Simulador de Pontos - Items Avulsos</h3>
                 <div class="form-grid">
                     <div class="form-group">
                         <label> Arroz (5Kg) - 10 pts</label>
                         <input type="number" id="qtdeArroz" min="0">
                     </div>
                     <div class="form-group">
-                        <label> feijão (2Kg) - 8 pts</label>
+                        <label> Feijão (2Kg) - 8 pts</label>
                         <input type="number" id="qtdeFeijao" min="0">
                     </div>
+                    <div class="form-group">
+                        <label> Óleo de Soja (1L ou 900ml) - 4 pts</label>
+                        <input type="number" id="qtdeOleo" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Pacote de macarrão (500g) - 2 pts</label>
+                        <input type="number" id="qtdeMacarrao" min="0">
+                    </div>
                 </div>
+            </section>
+            <section>
                 <button onclick="calcular()">
                     Calcular Pontuação da Equipe
                 </button>
@@ -47,13 +79,5 @@
             <p>Coordenação Trote Solidário 2026: trotesolidario@facef.br</p>
             <p>Uni-FACEF - Centro Universitário Municipal de Franca</p>
         </footer>
-        <script>
-            function calcular(){
-                let qtdeArroz = Number(document.getElementById("qtdeArroz").value)
-                let qtdeFeijao = Number(document.getElementById("qtdeFeijao").value)
-                let pontos = (qtdeArroz * 10) + (qtdeFeijao * 8)
-                document.getElementById("resultado").innerText = "Pontuação Total: " + pontos
-            }
-        </script>
     </body>
 </html>
